@@ -1,0 +1,276 @@
+/* CSS reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+fieldset,img { 
+	border:0;
+}
+ol,ul {
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+a{
+	text-decoration:none;
+}
+/* Demo Style */
+@gcolor:#f7efe2;
+@blue:#6ba5a8;
+@text-color:#292929;
+@orange:#FF8000;
+
+.box-shadow (@x: 1, @y: 1px, @blur: 4px, @color:rgba(191,191,191,0.1)) {
+   -webkit-box-shadow: @x @y @blur @color;
+   -moz-box-shadow: @x @y @blur @color;
+    box-shadow: @x @y @blur @color;
+}
+
+.text-shadow{
+    -webkit-text-shadow:0px 1px 1px @blue;
+    text-shadow: 0px 1px 1px @blue;
+}
+
+.animation(@name:h2-animation, @time:5s, @iterations:1, @ease:ease-in-out){
+	-webkit-animation: @name @time @iterations @ease;
+	-moz-animation: @name @time @iterations @ease;
+	-o-animation: @name @time @iterations @ease;
+	-ms-animation: @name @time @iterations @ease;
+	animation: @name @time @iterations @ease;
+}
+
+.gradient(@stop1:@orange, @stop2:@orange*1.3) {
+	background-image: -webkit-gradient(linear,left top,left bottom,from(@stop1),to(@stop2));
+	background: -webkit-linear-gradient(top, @stop1, @stop2);
+	background: -moz-linear-gradient(top, @stop1, @stop2);
+	background: -ms-linear-gradient(top, @stop1, @stop2);
+	background: -o-linear-gradient(top, @stop1, @stop2);
+	background: linear-gradient(top, @stop1, @stop2);
+}
+
+.rounded(@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box; 
+}
+
+body{
+	background: @blue url(../images/bg.gif) repeat top left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.ie7 body{
+	overflow:hidden;
+}
+.container{
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.container > header{
+		text-align: center;
+	}
+}
+
+
+/* Begin Banner*/
+#main {
+	width: 600px;
+	height: 400px;
+	margin: 80px auto 0;
+	.gradient(@blue, @blue*1.7);
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+	.box-shadow(0px, 4px, 23px, rgba(191,191,191,1));
+
+	#content {
+		width: 535px;
+		float: left;
+		margin: 40px;
+		text-align: center;
+		z-index: 4;
+		position: relative;
+		overflow: visible;
+
+		h2 {
+			background-image:url(../images/logo.png);
+			margin: 0 auto;
+			width:200px;
+			height:60px;
+			font-family: 'Sansita One', cursive;
+			color: @text-color;
+			font-size: 50px;
+			line-height: 50px;
+			.text-shadow;
+			.animation;
+			
+		}
+		h3 {
+			font-family: 'Boogaloo', cursive;
+			color: @text-color;
+			font-size: 25px;
+			line-height: 26px;
+			letter-spacing: 1px;
+			.text-shadow;
+			.animation(h3-animation, 8s, 1, ease-in-out);
+			
+		}
+		a {
+			font-family: 'Boogaloo', cursive;
+			color: @gcolor;
+			font-size: 20px;
+			line-height: 66px;
+			padding: 5px 10px;
+			background-color:@orange;
+			.gradient;
+			.rounded;
+			.box-shadow (1px, 2px, 4px,rgba(0,0,0,0.1));
+			.animation(h3-animation, 10s, 1, ease-in-out);
+
+			&:hover{
+				background-color:@orange;
+				background-image:none;
+			}
+		}
+	}
+
+	ul#bottomground{
+		li#ground {
+			width: 1200px;
+			height: 220px;
+			background-image: url(../images/ground.png);
+			background-repeat: repeat-x;
+			z-index: 3;
+			position: absolute;
+			bottom: -70px;
+			left:-30px;
+		}
+	}
+
+	ul#anteater {
+		width: 249px;
+		height: 215px;
+		z-index: 2;
+		position: absolute;
+		bottom: 35px;
+		left: 20px;
+		overflow: visible;
+		.animation(anteater-in-animation, 3s, 1, ease-out);
+
+
+		li {
+			width: 249px;
+			height: 215px;
+			background-image: url(../images/anteater.png);
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			overflow: visible;		
+		}
+	}
+
+	/* clouds with css */
+	.cloudstyle{
+	   content: '';
+	   position: absolute;
+	   background: #fff;
+	   z-index: -1;
+	}
+	#cloud{
+	    margin: 20px auto 20px;
+		.animation(cloud-group-1-animation, 70s, infinite, linear);
+	}
+	#cloud2{
+		margin: 100px auto 20px;
+		.animation(cloud-group-2-animation, 20s, infinite, linear);
+	}
+	#cloud, #cloud2, #cloud3 {  
+
+		position: absolute;
+		top: 0px;
+		z-index: 0;
+		width: 150px;
+	    height: 50px;
+
+		background: #fff;
+		.rounded(100px);
+		&:before {
+			.cloudstyle;
+			width: 80px;
+		    height: 80px;
+		    top: -40px;
+		    right: 25px;
+			.rounded(100px);
+		}
+		&:after{
+			.cloudstyle;
+			width: 40px;
+		    height: 40px;
+		    top: -20px;
+		    left: 20px;
+			.rounded(200px);
+		}
+	}
+	/* clouds with images */
+	#clouds {
+		position: absolute;
+		top: 0px;
+		z-index: 0;
+
+		#cloud-group-1 {
+			width:720px;
+			position: absolute;
+			left:0px;
+			.animation(cloud-group-1-animation, 30s, infinite, linear);
+
+		}
+		#cloud-group-2 {
+			width: 720px;
+			position: absolute;
+			left: 720px;
+			.animation(cloud-group-2-animation, 30s, infinite, linear);
+		}
+
+
+		.cloud-1 {
+			width: 172px;
+			height: 121px;
+			background-image: url(../images/cloud-1.png);
+			
+			top: 10px;
+			left: 40px;
+		}
+		.cloud-2 {
+			width: 121px;
+			height: 75px;
+			background-image: url(../images/cloud-2.png);
+			position: absolute;
+			top: -25px;
+			left: 300px;
+		}
+		.cloud-3 {
+			width: 132px;
+			height: 105px;
+			background-image: url(../images/cloud-3.png);
+			position: absolute;
+			top: -35px;
+			left: 530px;
+		}
+
+	}
+}
+
+@import "keyframes.css";
+
