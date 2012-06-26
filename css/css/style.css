@@ -1,0 +1,338 @@
+@import "keyframes.css";
+/* CSS reset */
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+h3 {
+  font-size: 16px;
+  margin-top: 40px;
+}
+h1 {
+  font-size: 18px;
+  margin-top: 40px;
+}
+a {
+  text-decoration: none;
+}
+.view {
+  margin: 10px 0px 15px;
+}
+a small {
+  margin-top: 0px !important;
+}
+/* Demo Style */
+.text-shadow {
+  -webkit-text-shadow: 0px 1px 1px #6ba5a8;
+  text-shadow: 0px 1px 1px #6ba5a8;
+}
+body {
+  background: #6ba5a8 url(../images/bg.gif) repeat top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.ie7 body {
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.clr {
+  clear: both;
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .container > header {
+    text-align: center;
+  }
+}
+/* Begin Banner*/
+#main {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6ba5a8), to(#b6ffff));
+  background: -webkit-linear-gradient(top, #6ba5a8, #b6ffff);
+  background: -moz-linear-gradient(top, #6ba5a8, #b6ffff);
+  background: -ms-linear-gradient(top, #6ba5a8, #b6ffff);
+  background: -o-linear-gradient(top, #6ba5a8, #b6ffff);
+  background: linear-gradient(top, #6ba5a8, #b6ffff);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0px 4px 23px #bfbfbf;
+  -moz-box-shadow: 0px 4px 23px #bfbfbf;
+  box-shadow: 0px 4px 23px #bfbfbf;
+  /* clouds with css */
+
+  /* clouds with images */
+
+}
+#main #content {
+  width: 535px;
+  float: left;
+  margin: 40px;
+  text-align: center;
+  z-index: 4;
+  position: relative;
+  overflow: visible;
+}
+#main #content h2 {
+  background-image: url(../images/logo.png);
+  margin: 0 auto;
+  width: 200px;
+  height: 60px;
+  font-family: 'Sansita One', cursive;
+  color: #292929;
+  font-size: 50px;
+  line-height: 50px;
+  -webkit-text-shadow: 0px 1px 1px #6ba5a8;
+  text-shadow: 0px 1px 1px #6ba5a8;
+  -webkit-animation: h2-animation 5s 1 ease-in-out;
+  -moz-animation: h2-animation 5s 1 ease-in-out;
+  -o-animation: h2-animation 5s 1 ease-in-out;
+  -ms-animation: h2-animation 5s 1 ease-in-out;
+  animation: h2-animation 5s 1 ease-in-out;
+}
+#main #content h3 {
+  font-family: 'Boogaloo', cursive;
+  color: #292929;
+  font-size: 25px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  -webkit-text-shadow: 0px 1px 1px #6ba5a8;
+  text-shadow: 0px 1px 1px #6ba5a8;
+  -webkit-animation: h3-animation 8s 1 ease-in-out;
+  -moz-animation: h3-animation 8s 1 ease-in-out;
+  -o-animation: h3-animation 8s 1 ease-in-out;
+  -ms-animation: h3-animation 8s 1 ease-in-out;
+  animation: h3-animation 8s 1 ease-in-out;
+}
+#main #content a {
+  font-family: 'Boogaloo', cursive;
+  color: #f7efe2;
+  font-size: 20px;
+  line-height: 66px;
+  padding: 5px 10px;
+  background-color: #ff8000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8000), to(#ffa600));
+  background: -webkit-linear-gradient(top, #ff8000, #ffa600);
+  background: -moz-linear-gradient(top, #ff8000, #ffa600);
+  background: -ms-linear-gradient(top, #ff8000, #ffa600);
+  background: -o-linear-gradient(top, #ff8000, #ffa600);
+  background: linear-gradient(top, #ff8000, #ffa600);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-animation: h3-animation 10s 1 ease-in-out;
+  -moz-animation: h3-animation 10s 1 ease-in-out;
+  -o-animation: h3-animation 10s 1 ease-in-out;
+  -ms-animation: h3-animation 10s 1 ease-in-out;
+  animation: h3-animation 10s 1 ease-in-out;
+}
+#main #content a:hover {
+  background-color: #ff8000;
+  background-image: none;
+}
+#main ul#bottomground li#ground {
+  width: 1200px;
+  height: 220px;
+  background-image: url(../images/ground.png);
+  background-repeat: repeat-x;
+  z-index: 3;
+  position: absolute;
+  bottom: -70px;
+  left: -30px;
+}
+#main ul#anteater {
+  width: 249px;
+  height: 215px;
+  z-index: 2;
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+  overflow: visible;
+  -webkit-animation: anteater-in-animation 3s 1 ease-out;
+  -moz-animation: anteater-in-animation 3s 1 ease-out;
+  -o-animation: anteater-in-animation 3s 1 ease-out;
+  -ms-animation: anteater-in-animation 3s 1 ease-out;
+  animation: anteater-in-animation 3s 1 ease-out;
+}
+#main ul#anteater li {
+  width: 249px;
+  height: 215px;
+  background-image: url(../images/anteater.png);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  overflow: visible;
+}
+#main .cloudstyle {
+  content: '';
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+}
+#main #cloud {
+  margin: 20px auto 20px;
+  -webkit-animation: cloud-group-1-animation 70s infinite linear;
+  -moz-animation: cloud-group-1-animation 70s infinite linear;
+  -o-animation: cloud-group-1-animation 70s infinite linear;
+  -ms-animation: cloud-group-1-animation 70s infinite linear;
+  animation: cloud-group-1-animation 70s infinite linear;
+}
+#main #cloud2 {
+  margin: 100px auto 20px;
+  -webkit-animation: cloud-group-2-animation 20s infinite linear;
+  -moz-animation: cloud-group-2-animation 20s infinite linear;
+  -o-animation: cloud-group-2-animation 20s infinite linear;
+  -ms-animation: cloud-group-2-animation 20s infinite linear;
+  animation: cloud-group-2-animation 20s infinite linear;
+}
+#main #cloud,
+#main #cloud2,
+#main #cloud3 {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#main #cloud:before,
+#main #cloud2:before,
+#main #cloud3:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  right: 25px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#main #cloud:after,
+#main #cloud2:after,
+#main #cloud3:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: 20px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#main #clouds {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+}
+#main #clouds #cloud-group-1 {
+  width: 720px;
+  position: absolute;
+  left: 0px;
+  -webkit-animation: cloud-group-1-animation 30s infinite linear;
+  -moz-animation: cloud-group-1-animation 30s infinite linear;
+  -o-animation: cloud-group-1-animation 30s infinite linear;
+  -ms-animation: cloud-group-1-animation 30s infinite linear;
+  animation: cloud-group-1-animation 30s infinite linear;
+}
+#main #clouds #cloud-group-2 {
+  width: 720px;
+  position: absolute;
+  left: 720px;
+  -webkit-animation: cloud-group-2-animation 30s infinite linear;
+  -moz-animation: cloud-group-2-animation 30s infinite linear;
+  -o-animation: cloud-group-2-animation 30s infinite linear;
+  -ms-animation: cloud-group-2-animation 30s infinite linear;
+  animation: cloud-group-2-animation 30s infinite linear;
+}
+#main #clouds .cloud-1 {
+  width: 172px;
+  height: 121px;
+  background-image: url(../images/cloud-1.png);
+  top: 10px;
+  left: 40px;
+}
+#main #clouds .cloud-2 {
+  width: 121px;
+  height: 75px;
+  background-image: url(../images/cloud-2.png);
+  position: absolute;
+  top: -25px;
+  left: 300px;
+}
+#main #clouds .cloud-3 {
+  width: 132px;
+  height: 105px;
+  background-image: url(../images/cloud-3.png);
+  position: absolute;
+  top: -35px;
+  left: 530px;
+}
