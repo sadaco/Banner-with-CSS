@@ -1,0 +1,224 @@
+
+/* WebKit Animations */
+@-webkit-keyframes h2-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes h3-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes form-animation {
+	0%   {opacity: 0; right: -400px;}
+	90%  {opacity: 0; right: -400px;}
+	95%  {opacity: 0.5; right: 20px;}
+	100% {opacity: 1; right: 0px;}
+}
+@-webkit-keyframes anteater-in-animation {
+	0%   {left: -200px;}
+	100% {left: 20px;}
+}
+@-webkit-keyframes anteater-animation {
+	0%   {bottom: 0px; left: 0px;}
+	25%  {bottom: -2px; left: -2px;}
+	70%  {bottom: 2px; left: -4px;}
+	100% {bottom: -1px; left: 0px;}
+}
+
+@-webkit-keyframes cloud-group-1-animation {
+	0%       {left: 0px;}
+	99.9999%   {left: -720px;}
+	100%     {left: 0px;}
+}
+@-webkit-keyframes cloud-group-2-animation {
+	0%       {left: 720px;}
+	99.9999%   {left: 0px;}
+	100%     {left: 720px;}
+}
+
+
+/* FireFox Animations */
+
+@-moz-keyframes h2-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes h3-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes a-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes form-animation {
+	0%   {opacity: 0; right: -400px;}
+	90%  {opacity: 0; right: -400px;}
+	95%  {opacity: 0.5; right: 20px;}
+	100% {opacity: 1; right: 0px;}
+}
+@-moz-keyframes anteater-in-animation {
+	0%   {left: -200px;}
+	100% {left: 20px;}
+}
+@-moz-keyframes anteater-animation {
+	0%   {bottom: 0px; left: 0px;}
+	25%  {bottom: -2px; left: -2px;}
+	70%  {bottom: 2px; left: -4px;}
+	100% {bottom: -1px; left: 0px;}
+}
+
+@-moz-keyframes cloud-group-1-animation {
+	0%       {left: 0px;}
+	99.9999%   {left: -720px;}
+	100%     {left: 0px;}
+}
+@-moz-keyframes cloud-group-2-animation {
+	0%       {left: 720px;}
+	99.9999%   {left: 0px;}
+	100%     {left: 720px;}
+}
+
+
+/* Opera Animations */
+
+@-o-keyframes h2-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes h3-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes a-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes form-animation {
+	0%   {opacity: 0; right: -400px;}
+	90%  {opacity: 0; right: -400px;}
+	95%  {opacity: 0.5; right: 20px;}
+	100% {opacity: 1; right: 0px;}
+}
+@-o-keyframes anteater-in-animation {
+	0%   {left: -200px;}
+	100% {left: 20px;}
+}
+@-o-keyframes anteater-animation {
+	0%   {bottom: 0px; left: 0px;}
+	25%  {bottom: -2px; left: -2px;}
+	70%  {bottom: 2px; left: -4px;}
+	100% {bottom: -1px; left: 0px;}
+}
+
+@-o-keyframes cloud-group-1-animation {
+	0%       {left: 0px;}
+	99.9999%   {left: -720px;}
+	100%     {left: 0px;}
+}
+@-o-keyframes cloud-group-2-animation {
+	0%       {left: 720px;}
+	99.9999%   {left: 0px;}
+	100%     {left: 720px;}
+}
+
+
+/* IE Animations */
+
+@-ms-keyframes h2-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-ms-keyframes h3-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-ms-keyframes a-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-ms-keyframes form-animation {
+	0%   {opacity: 0; right: -400px;}
+	90%  {opacity: 0; right: -400px;}
+	95%  {opacity: 0.5; right: 20px;}
+	100% {opacity: 1; right: 0px;}
+}
+@-ms-keyframes anteater-in-animation {
+	0%   {left: -200px;}
+	100% {left: 20px;}
+}
+@-ms-keyframes anteater-animation {
+	0%   {bottom: 0px; left: 0px;}
+	25%  {bottom: -2px; left: -2px;}
+	70%  {bottom: 2px; left: -4px;}
+	100% {bottom: -1px; left: 0px;}
+}
+
+@-ms-keyframes cloud-group-1-animation {
+	0%       {left: 0px;}
+	99.9999%   {left: -720px;}
+	100%     {left: 0px;}
+}
+@-ms-keyframes cloud-group-2-animation {
+	0%       {left: 720px;}
+	99.9999%   {left: 0px;}
+	100%     {left: 720px;}
+}
+
+
+/* Animations */
+
+@keyframes h2-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes h3-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes a-animation {
+	0%   {opacity: 0;}
+	80%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes form-animation {
+	0%   {opacity: 0; right: -400px;}
+	90%  {opacity: 0; right: -400px;}
+	95%  {opacity: 0.5; right: 20px;}
+	100% {opacity: 1; right: 0px;}
+}
+@keyframes anteater-in-animation {
+	0%   {left: -200px;}
+	100% {left: 20px;}
+}
+
+@keyframes anteater-animation {
+	0%   {bottom: 0px; left: 0px;}
+	25%  {bottom: -2px; left: -2px;}
+	70%  {bottom: 2px; left: -4px;}
+	100% {bottom: -1px; left: 0px;}
+}
+
+@keyframes cloud-group-1-animation {
+	0%       {left: 0px;}
+	99.9999%   {left: -720px;}
+	100%     {left: 0px;}
+}
+@keyframes cloud-group-2-animation {
+	0%       {left: 720px;}
+	99.9999%   {left: 0px;}
+	100%     {left: 720px;}
+}
